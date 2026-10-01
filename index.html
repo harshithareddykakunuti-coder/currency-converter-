@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="converter">
+      <h1>💱 Currency Converter</h1>
+      <p class="subtitle">Convert currencies quickly and easily</p>
+
+      <label>Amount</label>
+      <input type="number" id="amount" value="1" min="0">
+
+      <div class="row">
+        <div>
+          <label>From</label>
+          <select id="fromCurrency">
+            <option value="USD">USD - US Dollar</option>
+            <option value="INR">INR - Indian Rupee</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="GBP">GBP - British Pound</option>
+            <option value="JPY">JPY - Japanese Yen</option>
+            <option value="AUD">AUD - Australian Dollar</option>
+            <option value="CAD">CAD - Canadian Dollar</option>
+          </select>
+        </div>
+
+        <button id="swap" title="Swap currencies">⇄</button>
+
+        <div>
+          <label>To</label>
+          <select id="toCurrency">
+            <option value="INR">INR - Indian Rupee</option>
+            <option value="USD">USD - US Dollar</option>
+            <option value="EUR">EUR - Euro</option>
+            <option value="GBP">GBP - British Pound</option>
+            <option value="JPY">JPY - Japanese Yen</option>
+            <option value="AUD">AUD - Australian Dollar</option>
+            <option value="CAD">CAD - Canadian Dollar</option>
+          </select>
+        </div>
+      </div>
+
+      <button class="convert-btn" id="convert">Convert</button>
+
+      <div class="result" id="result">
+        Enter an amount and click Convert
+      </div>
+
+      <p class="note">Rates are fetched from a public exchange-rate API.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
